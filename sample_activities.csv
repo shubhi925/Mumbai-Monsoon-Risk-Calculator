@@ -1,0 +1,13 @@
+id,name,duration,cost,predecessors,delay_O,delay_M,delay_P,cost_O,cost_M,cost_P
+A1,Site clearance and enabling works,18,12,,0,1,4,0,0.2,1.0
+A2,Excavation shoring and dewatering,35,28,A1,0,2,8,0,0.8,4.5
+A3,PCC footing reinforcement and shuttering,29,55,A2,0,1,5,0,0.8,4.0
+A4,Footing and column RCC up to plinth,23,65,A3,0,2,6,0,1.0,5.0
+A5,Backfilling and plinth beam RCC,21,32,A4,0,1,3,0.1,0.8,4.0
+A6,Superstructure RCC ground to 2nd floor,70,150,A5,5,15,41,3.0,10.0,30.0
+A7,Superstructure RCC 3rd to 4th and terrace,53,95,A6,2,8,22,1.5,6.0,20.0
+A8,Block masonry all floors,47,60,A7,0,1,2,0,1.0,5.0
+A9,MEP services rough-in and fit-out,42,110,A8,0,1,4,0,1.0,5.0
+A10,External plaster and waterproofing,41,65,A8,0,2,6,0.3,3.0,14.0
+A11,Internal plaster flooring and painting,64,163,A9;A10,0,2,6,0,1.5,8.0
+A12,External development paving and drainage,29,23,A10,0,1,5,0,0.5,3.0
